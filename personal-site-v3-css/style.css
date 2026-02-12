@@ -1,0 +1,267 @@
+/*General Rules style for all pages and some AI code kept or with some minor tweaks fron me
+by messing around and finding different styles i like */
+
+*{
+    box-sizing: border-box;
+}
+hr {
+    border:none;
+    margin:0;
+}
+
+body{
+font-family: 'Times New Roman', Times, serif;
+margin: 0;
+min-height: 100vh;
+background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='80' patternTransform='scale(12) rotate(50)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M0 10h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(47,80.9%,61%,1)' fill='none'/><path d='M0 30h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(4.1,89.6%,58.4%,1)' fill='none'/><path d='M0 50h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(186.8,100%,41.6%,1)' fill='none'/><path d='M0 70h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(258.5,59.4%,59.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+color: white;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h1{
+margin: 0;
+padding-left: 0;
+color:white;
+}
+
+
+header ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header li{
+    margin: 0;
+}
+
+header a{
+    color: white;
+    text-decoration:none;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+header a:hover{
+text-decoration: underline;
+text-decoration-color: white;
+background: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+/* Main Content Rules */
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    
+}
+
+
+/* headings */
+h2, h3 {
+    color: white;
+    margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: white;
+   
+}
+
+/* Links with no underlines */
+a {
+    text-decoration: none;
+}
+
+main ul{
+    padding-left: 25px;
+    list-style-type: square;
+}
+
+/* image alignments / dimensions */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-top:  12px;
+}
+
+footer{
+    padding: -2px;
+    text-align: center;
+    
+}
+footer a{
+    
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: white
+}
+footer a:active{
+     transform: translateY(4px);
+}
+
+
+img {
+    display:block;
+    margin:20px auto;
+    max-width: 100%;
+}
+/*----------------------------------------------------------------------------------------------------------- */
+
+
+/* Index Page button */
+
+.btn{
+    display:block;
+    margin: 20px auto;
+    padding:10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+}
+.btn:hover{
+    background-color: gray;
+}
+.btn:active{
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+
+/* Centering Trips Page pictures */
+.trips-images{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+}
+
+.trips-images img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.35)
+}
+
+/* --------------------------------------------- */
+
+/* fancier table */
+.fancy-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.fancy-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.fancy-table th, .fancy-table td{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: skyblue;
+}
+
+.fancy-table th {
+    background:rgba(255, 255, 255, 0.3);
+    color: yellow;
+}
+
+
+/* lyrics page rules*/
+.lyrics-spacing {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.lyrics-spacing p {
+    margin-bottom: 12px;  
+    line-height: 1.6;
+}
+.lyrics-spacing h3 {
+    margin-top: 24px;  
+    margin-bottom: 12px; 
+    color: #ff99cc;     
+}
+.lyrics-spacing {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25); 
+    border-radius: 12px;
+}
+/* TO THE TOP WE GO */
+.btn-lyrics{
+    display:inline-block;
+    margin: 20px auto;
+    padding: 10px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+
+   }
+   /* click effect */
+   .btn-lyrics:active{
+    transform: translateY(4px);
+   }
+   /* -------------------------------- */
+
+
+/* video centering */
+.video-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;         
+    margin: 20px auto;
+    aspect-ratio: 16 / 9;    
+}
+
+.video-center iframe {
+    width: 100%;
+    height: 100%;             
+    border: none;
+}
