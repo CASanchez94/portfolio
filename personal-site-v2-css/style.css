@@ -1,0 +1,249 @@
+/* AI Recommended General Rules style for all pages */
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='80' patternTransform='scale(12) rotate(50)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M0 10h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(47,80.9%,61%,1)' fill='none'/><path d='M0 30h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(4.1,89.6%,58.4%,1)' fill='none'/><path d='M0 50h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(186.8,100%,41.6%,1)' fill='none'/><path d='M0 70h20z'  transform='translate(5,0)' stroke-width='0.5' stroke='hsla(258.5,59.4%,59.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    color: white;
+}
+
+/* Header styling */
+header {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    margin: 0;
+    padding-left: 0;
+    color: white;
+}
+
+/* Navigation */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header li {
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Main content card */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Headings */
+h2, h3 {
+    color: white;
+    margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: white;
+}
+
+/* Links */
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+main ul{
+
+    padding-left:20px;
+    list-style-type: square;
+
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    margin-top: 12px;
+}
+
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* img center index page */
+.img-center{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Button */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
+.btn:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/* ------------------------------------------------------------------------------------------ */
+
+/* Trips Page Rules */
+.trips-images {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trips-images figure {
+  margin: 20px; 
+  width: 300px; 
+  text-align: center;
+}
+
+.trips-images img {
+  width: 100%;      
+  height: 200px;     
+  object-fit: cover; 
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* Table Container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+.table-container th {
+    background: rgba(255,255,255,0.1);
+    color: #ffd700; 
+}
+
+/* Lyrics tweaks */
+.lyrics-spacing {
+    margin-bottom: 20px;  
+}
+
+.lyrics-spacing p {
+    margin-bottom: 12px;  
+    line-height: 1.6;
+}
+.lyrics-spacing h3 {
+    margin-top: 24px;  
+    margin-bottom: 12px; 
+    color: #ff99cc;     
+}
+.lyrics-spacing {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25); 
+    border-radius: 12px;
+}
+
+/* video container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;         
+    margin: 20px auto;
+    aspect-ratio: 16 / 9;    
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;             
+    border: none;
+}
+
+/* General content spacing for paragraphs and sections */
+.content-spacing p {
+    margin-bottom: 16px;   
+    line-height: 1.6;      
+}
+
+.content-spacing h2, 
+.content-spacing h3 {
+    margin-top: 24px;      
+    margin-bottom: 12px;   
+}
